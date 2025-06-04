@@ -10,7 +10,7 @@ pipeline {
 
         stage('Archive Log') {
             steps {
-                archiveArtifacts artifacts: 'output.log', onlyIfSuccessful: true
+                archiveArtifacts artifacts: 'output_*.log', onlyIfSuccessful: true
             }
         }
     }
