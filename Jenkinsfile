@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Python Script') {
             steps {
-                sh 'python3 system_info.py'
+                bat 'python3 system_info.py'
             }
         }
 
